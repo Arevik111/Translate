@@ -1,0 +1,11 @@
+.padd{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.aaa {
+	width:120px;
+	height: 70px;
+	background-color: red;
+	border: 1px solid black;
+}
+
