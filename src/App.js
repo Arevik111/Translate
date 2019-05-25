@@ -5,17 +5,15 @@ import { Footer } from './components/Footer/Footer';
 import { Container } from 'reactstrap';
 
 class App extends React.Component {
-    render() {
-        return (
-          <Container fluid>
-            <Header />
-            
-            <Content />
-            <Footer />
-            </Container>  
-      );
-    };
-
+	render() {
+		return (
+			<Container fluid>
+				<Header />
+				<Content />
+				<Footer />
+			</Container>  
+		);
+	};
 };
 
 export {App};

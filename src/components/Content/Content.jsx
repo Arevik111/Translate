@@ -1,12 +1,10 @@
-import React from 'react';
-import { Tabs } from './Tabs';
+import React from "react";
+import { Tabs } from "./Tabs";
 
 class Content extends React.Component {
-    render() {
-        return (
-            <Tabs />
-      );
-    }
-};
+  render() {
+    return <Tabs />;
+  }
+}
 
-export {Content};
+export { Content };
