@@ -16,4 +16,8 @@ sss{
 	border:1px solid black;
 	height: 140px;
 }
+.item{
+	border: 1px solid gray;
+	height: 12em; 
+	}
 
