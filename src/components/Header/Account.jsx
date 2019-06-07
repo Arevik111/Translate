@@ -29,7 +29,7 @@ class Account extends React.Component {
 
   render() {
     return (
-      <Container>
+      <Container style={{ paddingLeft: "0", paddingRight: "0" }}>
         <Nav>
           <Dropdown
             nav
@@ -37,10 +37,19 @@ class Account extends React.Component {
             placement="top"
             toggle={this.toggle}
           >
-            <DropdownToggle nav faded='true'>
+            <DropdownToggle
+              nav
+              faded="true"
+              style={{ paddingLeft: "0", paddingRight: "0" }}
+            >
               <Button
                 color="secondary"
-                style={{ height: "2.3em", width: "2.3em", borderRadius: "50%" }}
+                style={{
+                  height: "2.3em",
+                  width: "2.3em",
+                  borderRadius: "50%",
+                  backgroundColor: "#212529"
+                }}
               >
                 A
               </Button>
@@ -50,7 +59,7 @@ class Account extends React.Component {
                 height: "12em",
                 width: "18em",
                 position: "absolute",
-                left: "-13em"
+                left: "-13.7em"
               }}
             >
               <DropdownItem>

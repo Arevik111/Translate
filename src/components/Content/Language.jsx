@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Fade, Row, Col } from "reactstrap";
+import { Button, Fade } from "reactstrap";
 
 class Language extends React.Component {
   constructor(props) {
@@ -10,39 +10,49 @@ class Language extends React.Component {
 
   render() {
     return (
-      <Row>
-        <Col sm="2">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          height: "50px"
+        }}
+      >
+        <div>
           <h5>Oпределить язык</h5>
-        </Col>
-        <Col sm="2">
-          <Fade in={!this.state.fadeIn} tag="h5" className="mt-3">
-            Английский
+        </div>
+
+        <div style={{ position: "absolute", left: "30%" }}>
+          <Fade in={!this.state.fadeIn}>
+            <h5>Английский</h5>
           </Fade>
-        </Col>
-        <Col sm="2">
-          <Fade in={this.state.fadeIn} tag="h5" className="mt-3">
-            Армянский
+        </div>
+        <div style={{ position: "absolute", left: "30%" }}>
+          <Fade in={this.state.fadeIn}>
+            <h5>Армянский</h5>
           </Fade>
-        </Col>
-        <Col sm="2">
+        </div>
+
+        <div style={{ position: "absolute", left: "48%" }}>
           <Button color="link" onClick={this.toggle}>
             <img
               src="https://img.icons8.com/metro/26/000000/sorting-arrows-horizontal.png"
               alt="icon4"
             />
           </Button>
-        </Col>
-        <Col sm="2">
-          <Fade in={!this.state.fadeIn} tag="h5" className="mt-3">
-            Армянский
+        </div>
+
+        <div style={{ position: "absolute", left: "60%" }}>
+          <Fade in={!this.state.fadeIn}>
+            <h5>Армянский</h5>
           </Fade>
-        </Col>
-        <Col sm="2">
-          <Fade in={this.state.fadeIn} tag="h5" className="mt-3">
-            Английский
+        </div>
+        <div style={{ position: "absolute", left: "60%" }}>
+          <Fade in={this.state.fadeIn}>
+            <h5>Английский</h5>
           </Fade>
-        </Col>
-      </Row>
+        </div>
+      </div>
     );
   }
 

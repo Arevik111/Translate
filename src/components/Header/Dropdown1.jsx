@@ -33,7 +33,7 @@ class Dropdown1 extends React.Component {
             direction="down"
             toggle={this.toggle}
           >
-            <DropdownToggle nav faded='true'>
+            <DropdownToggle nav faded="true">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQGEyHZgs4micyzGtAQDqrzJaVDuRpSVmRY7tbtBTmFrk7BzP1"
                 width="30px"

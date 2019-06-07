@@ -4,20 +4,31 @@ import { Button } from "reactstrap";
 class Community extends React.Component {
   render() {
     return (
-      <div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center"
+        }}
+      >
         <a href="https://translate.google.am/community?source=mfooter">
           <Button
             outline
             color="secondary"
-            style={{ height: "4em", width: "4em", borderRadius: "50%" }}
+            style={{
+              height: "6em",
+              width: "6em",
+              borderRadius: "50%",
+              margin: "10px"
+            }}
           >
             <img
               src="https://img.icons8.com/ios-glyphs/30/000000/group-foreground-selected.png"
               alt="icon9"
             />
           </Button>
-          <h6>Сообщества</h6>
         </a>
+        <h6>Сообщества</h6>
       </div>
     );
   }

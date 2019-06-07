@@ -40,7 +40,10 @@ class Tabs extends React.Component {
               }}
             >
               <Button color="light text-primary">
-                <img src="https://img.icons8.com/color/32/000000/google-translate.png" alt='google-translate' />{" "}
+                <img
+                  src="https://img.icons8.com/color/32/000000/google-translate.png"
+                  alt="google-translate"
+                />{" "}
                 Текст
               </Button>
             </NavLink>
