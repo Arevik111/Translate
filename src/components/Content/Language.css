@@ -1,0 +1,43 @@
+.panelLang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  flex-wrap: wrap;
+}
+
+.lang1 {
+  position: absolute;
+  left: 30%;
+}
+
+.arrow {
+  position: absolute;
+  left: 48%;
+}
+
+.lang2 {
+  position: absolute;
+  left: 60%;
+}
+
+@media screen and (max-width: 640px) {
+  .lang1 {
+    position: absolute;
+    left: 5%;
+  }
+
+  .lang2 {
+    position: absolute;
+    left: 65%;
+  }
+
+  .checkLang {
+    display: none;
+  }
+
+  .arrow {
+    position: absolute;
+    left: 44%;
+  }
+}

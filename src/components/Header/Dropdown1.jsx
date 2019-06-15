@@ -1,4 +1,7 @@
 import React from "react";
+import { Dropdown2 } from "./Dropdown2";
+import "./Dropdown1.css";
+
 import {
   Nav,
   Dropdown,
@@ -7,6 +10,7 @@ import {
   DropdownMenu
 } from "reactstrap";
 
+const style = { margin: "1.2em" };
 class Dropdown1 extends React.Component {
   constructor(props) {
     super(props);
@@ -49,21 +53,16 @@ class Dropdown1 extends React.Component {
                 left: "-1.8em"
               }}
             >
-              <DropdownItem header style={{ margin: "1.2em" }}>
-                О Переводчике google{" "}
+              <DropdownItem className="dropdown22" header style={style}>
+                <Dropdown2 />
               </DropdownItem>
-              <DropdownItem style={{ margin: "1.2em" }}>
-                Сообщества
-              </DropdownItem>
+              <DropdownItem style={style}>О Переводчике google </DropdownItem>
+              <DropdownItem style={style}>Сообщества</DropdownItem>
               <DropdownItem divider />
-              <DropdownItem style={{ margin: "1.2em" }}>
-                Правила и Принципы
-              </DropdownItem>
-              <DropdownItem style={{ margin: "1.2em" }}>Справка</DropdownItem>
-              <DropdownItem style={{ margin: "1.2em" }}>
-                Отправить отзыв
-              </DropdownItem>
-              <DropdownItem style={{ margin: "1.2em" }}>О Google</DropdownItem>
+              <DropdownItem style={style}>Правила и Принципы</DropdownItem>
+              <DropdownItem style={style}>Справка</DropdownItem>
+              <DropdownItem style={style}>Отправить отзыв</DropdownItem>
+              <DropdownItem style={style}>О Google</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </Nav>

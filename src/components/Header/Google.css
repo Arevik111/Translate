@@ -1,0 +1,16 @@
+.google {
+  width: 90px;
+  display: inline-block;
+  line-height: normal;
+}
+
+span {
+  display: inline-block;
+  font-size: 26px;
+  color: #5f6368;
+  position: relative;
+}
+
+div a:hover {
+  text-decoration: none;
+}

@@ -3,7 +3,11 @@ import React from "react";
 class Addlanguage extends React.Component {
   render() {
     const { name } = this.props;
-    return <input value={"Язык оригинала: " + name} />;
+    return (
+      <ol style={{ margin: "0px" }}>
+        <li>{name}</li>
+      </ol>
+    );
   }
 }
 

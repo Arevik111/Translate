@@ -6,7 +6,12 @@ class InputText extends React.Component {
     return (
       <Input
         type="textarea"
-        style={{ height: "6em", border: "none", fontSize: "25px" }}
+        style={{
+          height: "4em",
+          border: "none",
+          fontSize: "25px",
+          boxShadow: "none"
+        }}
         data_name={data_name}
         placeholder="Введите текст"
         value={text}

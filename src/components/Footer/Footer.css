@@ -1,0 +1,25 @@
+.styleF {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.footerContent {
+  margin: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .styleF {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .footerContent {
+    margin: 10px 0;
+  }
+}

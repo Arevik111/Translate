@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Fade } from "reactstrap";
+import "./Language.css";
 
 class Language extends React.Component {
   constructor(props) {
@@ -10,30 +11,23 @@ class Language extends React.Component {
 
   render() {
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          height: "50px"
-        }}
-      >
-        <div>
+      <div className="panelLang">
+        <div className="checkLang">
           <h5>Oпределить язык</h5>
         </div>
 
-        <div style={{ position: "absolute", left: "30%" }}>
+        <div className="lang1">
           <Fade in={!this.state.fadeIn}>
             <h5>Английский</h5>
           </Fade>
         </div>
-        <div style={{ position: "absolute", left: "30%" }}>
+        <div className="lang1">
           <Fade in={this.state.fadeIn}>
             <h5>Армянский</h5>
           </Fade>
         </div>
 
-        <div style={{ position: "absolute", left: "48%" }}>
+        <div className="arrow">
           <Button color="link" onClick={this.toggle}>
             <img
               src="https://img.icons8.com/metro/26/000000/sorting-arrows-horizontal.png"
@@ -42,12 +36,12 @@ class Language extends React.Component {
           </Button>
         </div>
 
-        <div style={{ position: "absolute", left: "60%" }}>
+        <div className="lang2">
           <Fade in={!this.state.fadeIn}>
             <h5>Армянский</h5>
           </Fade>
         </div>
-        <div style={{ position: "absolute", left: "60%" }}>
+        <div className="lang2">
           <Fade in={this.state.fadeIn}>
             <h5>Английский</h5>
           </Fade>

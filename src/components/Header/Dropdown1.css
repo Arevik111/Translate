@@ -1,0 +1,9 @@
+.dropdown2 {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .dropdown22 {
+    float: right;
+  }
+}

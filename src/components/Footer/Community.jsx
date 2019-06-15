@@ -19,7 +19,8 @@ class Community extends React.Component {
               height: "6em",
               width: "6em",
               borderRadius: "50%",
-              margin: "10px"
+              margin: "10px",
+              backgroundColor: "white"
             }}
           >
             <img

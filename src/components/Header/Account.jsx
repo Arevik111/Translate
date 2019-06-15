@@ -1,4 +1,5 @@
 import React from "react";
+import "./Account.css";
 import {
   Nav,
   Dropdown,
@@ -29,7 +30,7 @@ class Account extends React.Component {
 
   render() {
     return (
-      <Container style={{ paddingLeft: "0", paddingRight: "0" }}>
+      <Container className="account">
         <Nav>
           <Dropdown
             nav
@@ -56,10 +57,9 @@ class Account extends React.Component {
             </DropdownToggle>
             <DropdownMenu
               style={{
-                height: "12em",
-                width: "18em",
+                width: "25em",
                 position: "absolute",
-                left: "-13.7em"
+                left: "-18em"
               }}
             >
               <DropdownItem>
@@ -77,7 +77,7 @@ class Account extends React.Component {
                     </Button>
                   </Col>
 
-                  <Col sm="9">
+                  <Col sm="7">
                     <h6>Arevik Gharagyozyan</h6>
                     <h6 style={{ fontSize: "12px" }}>
                       arevikgharagyozyan@gmail.com
@@ -93,7 +93,9 @@ class Account extends React.Component {
                 <Row>
                   <Col xs="8" />
                   <Col xs="4">
-                    <Button color="secondary">Выйти</Button>
+                    <Button color="secondary" style={{ margin: "0px" }}>
+                      Выйти
+                    </Button>
                   </Col>
                 </Row>
               </DropdownItem>

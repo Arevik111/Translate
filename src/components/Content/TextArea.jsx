@@ -1,13 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Input } from "reactstrap";
 import { Addlanguage } from "./Addlanguage";
 import { Delete } from "./Delete";
 import { InputText } from "./InputText";
-//import styles from './Style.module.css';
+import "./TextArea.css";
 
 class TextArea extends React.Component {
   state = {
-    name: "English",
     data_name1: 1,
     active_input: null,
     text: ""
@@ -25,68 +24,46 @@ class TextArea extends React.Component {
   };
 
   render() {
-    const { name, data_name1, active_input, text } = this.state;
+    const { name1, name2, data_name1, active_input, text } = this.state;
     return (
       <div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            margin: "0"
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "50%",
-              border: "1px solid gray",
-              borderLeft: "none"
-            }}
-          >
-            <div class="flex-container">
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row"
-                }}
-              >
-                <div style={{ width: "95%", alignContent: "space-between" }}>
+        <div className="inputText">
+          <div className="outputText">
+            <div>
+              <div className="inp">
+                <div className="inp1">
                   <InputText
                     onChange={this.onChange}
                     data_name={data_name1}
                     text={text}
                   />
                 </div>
-                <div style={{ width: "5%" }}>
+                <div className="wdt">
                   <Delete onClick={this.onClick} />
                 </div>
               </div>
-              <div style={{ height: "20px" }}>
+              <div className="addLang">
                 {active_input === 1 && text !== "" && (
-                  <Addlanguage name={name} />
+                  <Fragment>
+                    <h5>Язык оригинала: </h5>
+                    <Addlanguage name={"English"} />
+                    <Addlanguage name={"Հայերեն"} />
+                  </Fragment>
                 )}
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  position: "absolute",
-                  bottom: "35px",
-                  width: "50%"
-                }}
-              >
-                <div style={{ flexGrow: "8" }}>
+              <div className="inpDown">
+                <div className="microphone">
                   <img
                     src="https://ssl.gstatic.com/images/icons/material/system_gm/2x/mic_black_24dp.png"
                     width="30px"
                     alt="icon5"
+                    className="microphone2"
                   />
                 </div>
-                <div style={{ flexGrow: "1" }}>
-                  <span>1/5000 </span>
+                <div className="count">
+                  <span>{text.length}/5000 </span>
                 </div>
-                <div style={{ flexGrow: "1" }}>
+                <div className="pen">
                   <img
                     src="https://img.icons8.com/ios-glyphs/30/000000/edit.png"
                     width="20px"
@@ -96,15 +73,7 @@ class TextArea extends React.Component {
               </div>
             </div>
           </div>
-          <div
-            style={{
-              backgroundColor: "#f1f1f1",
-              width: "50%",
-              textAlign: "center",
-              lineHeight: "75px",
-              fontSize: "30px"
-            }}
-          >
+          <div className="translate">
             <Input
               type="textarea"
               placeholder="Перевод"
@@ -112,15 +81,50 @@ class TextArea extends React.Component {
                 border: "1px solid gray",
                 borderRight: "none",
                 height: "9em",
-                fontSize: "25px"
+                fontSize: "25px",
+                borderRadius: "0",
+                boxShadow: "none"
               }}
             />
           </div>
+          <div className="translateMobile">
+            {active_input === 1 && text !== "" && (
+              <div className="minTr">
+                <Input
+                  type="textarea"
+                  placeholder="Перевод"
+                  style={{
+                    border: "1px solid gray",
+                    borderRight: "none",
+                    height: "9em",
+                    width: "100%",
+                    fontSize: "25px",
+                    borderRadius: "0",
+                    boxShadow: "none",
+                    backgroundColor: "#1a73e8",
+                    color: "#fff"
+                  }}
+                />
+                <div className="styleMinDown">
+                  <div className="volume"></div>
+                  <div>
+                    <img
+                      src="https://img.icons8.com/material/24/000000/copy.png"
+                      alt="copy"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://ssl.gstatic.com/images/icons/material/system_gm/1x/more_vert_white_24dp.png"
+                      alt="more"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
         </div>
-        <a
-          style={{ display: "flex", justifyContent: "flex-end", color: "gray" }}
-          href="https://translate.google.am/?hl=ru&tab=TT#view=home&op=translate&sl=auto&tl=ru"
-        >
+        <a href="https://translate.google.am/?hl=ru&tab=TT#view=home&op=translate&sl=auto&tl=ru">
           <em>Отправить отзыв</em>
         </a>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Tabs.css";
 import {
   TabContent,
   TabPane,
@@ -29,33 +30,48 @@ class Tabs extends React.Component {
   }
   render() {
     return (
-      <div>
-        <hr />
+      <div className="content">
+        <hr className="line" />
         <Nav tabs>
-          <NavItem>
+          <NavItem className="tabs">
             <NavLink
               className={classnames({ active: this.state.activeTab === "1" })}
               onClick={() => {
                 this.toggle("1");
               }}
             >
-              <Button color="light text-primary">
+              <Button
+                color="light text-primary"
+                style={{
+                  backgroundColor: "rgba(66,133,244,0.12)",
+                  fontWeight: "500"
+                }}
+              >
                 <img
-                  src="https://img.icons8.com/color/32/000000/google-translate.png"
+                  src="https://ssl.gstatic.com/translate/ic_translate_googblue600_20dp.svg"
                   alt="google-translate"
                 />{" "}
                 Текст
               </Button>
             </NavLink>
           </NavItem>
-          <NavItem>
+          <NavItem className="tabs">
             <NavLink
               className={classnames({ active: this.state.activeTab === "2" })}
               onClick={() => {
                 this.toggle("2");
               }}
             >
-              <Button outline color="primary">
+              <Button
+                outline
+                color="primary"
+                style={{
+                  backgroundColor: "rgba(66,133,244,0.12)",
+                  color: "#1a73e8",
+                  fontWeight: "500"
+                }}
+                className="tabsbtn"
+              >
                 <img
                   src="https://img.icons8.com/material/24/000000/file.png"
                   alt="icon10"
@@ -65,7 +81,7 @@ class Tabs extends React.Component {
             </NavLink>
           </NavItem>
         </Nav>
-        <hr />
+        <hr className="line" />
         <Language />
         <TabContent activeTab={this.state.activeTab}>
           <TabPane tabId="1">

@@ -1,0 +1,36 @@
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.headerOne {
+  display: flex;
+  align-items: center;
+}
+
+.headerTwo {
+  padding: 0 0;
+}
+
+.dropdown2 {
+  display: inline;
+}
+
+@media screen and (max-width: 640px) {
+  .dropdown2 {
+    display: none;
+  }
+}

@@ -8,6 +8,12 @@ import {
 } from "reactstrap";
 import { Button } from "reactstrap";
 
+const style = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  width: "7em"
+};
 class Dropdown2 extends React.Component {
   constructor(props) {
     super(props);
@@ -59,14 +65,7 @@ class Dropdown2 extends React.Component {
                   alignContent: "space-between"
                 }}
               >
-                <DropdownItem
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "7em"
-                  }}
-                >
+                <DropdownItem style={style}>
                   <Button
                     color="secondary"
                     style={{
@@ -80,14 +79,7 @@ class Dropdown2 extends React.Component {
                   <h6>Aккаунт</h6>
                 </DropdownItem>
 
-                <DropdownItem
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "7em"
-                  }}
-                >
+                <DropdownItem style={style}>
                   <img
                     src="https://img.icons8.com/color/60/000000/google-logo.png"
                     alt="goolle-logo"
@@ -95,14 +87,7 @@ class Dropdown2 extends React.Component {
                   <h6>Поиск</h6>
                 </DropdownItem>
 
-                <DropdownItem
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "7em"
-                  }}
-                >
+                <DropdownItem style={style}>
                   <img
                     src="https://img.icons8.com/color/60/000000/google-play.png"
                     alt="google-play"
@@ -110,42 +95,21 @@ class Dropdown2 extends React.Component {
                   <h6>Play</h6>
                 </DropdownItem>
 
-                <DropdownItem
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "7em"
-                  }}
-                >
+                <DropdownItem style={style}>
                   <img
                     src="https://img.icons8.com/color/60/000000/gmail-login.png"
                     alt="gmail-login"
                   />
                   <h6>Почта</h6>
                 </DropdownItem>
-                <DropdownItem
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "7em"
-                  }}
-                >
+                <DropdownItem style={style}>
                   <img
                     src="https://img.icons8.com/color/60/000000/google-groups.png"
                     alt="google-groups"
                   />
                   <h6>Kонтакти</h6>
                 </DropdownItem>
-                <DropdownItem
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "7em"
-                  }}
-                >
+                <DropdownItem style={style}>
                   <img
                     src="https://img.icons8.com/color/60/000000/google-drive.png"
                     alt="google-drive"
@@ -153,42 +117,21 @@ class Dropdown2 extends React.Component {
                   <h6>Диск</h6>
                 </DropdownItem>
 
-                <DropdownItem
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "7em"
-                  }}
-                >
+                <DropdownItem style={style}>
                   <img
                     src="https://img.icons8.com/color/60/000000/calendar-31.png"
                     alt="calendar-31"
                   />
                   <h6>Календарь</h6>
                 </DropdownItem>
-                <DropdownItem
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "7em"
-                  }}
-                >
+                <DropdownItem style={style}>
                   <img
                     src="https://img.icons8.com/color/60/000000/google-translate.png"
                     alt="google-translate"
                   />
                   <h6>Переводчик</h6>
                 </DropdownItem>
-                <DropdownItem
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    width: "7em"
-                  }}
-                >
+                <DropdownItem style={style}>
                   <img
                     src="https://img.icons8.com/color/60/000000/google-photos.png"
                     alt="google-photos"
