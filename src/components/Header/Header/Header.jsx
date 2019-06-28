@@ -1,8 +1,8 @@
 import React from "react";
-import { Dropdown1 } from "./Dropdown1";
-import { Dropdown2 } from "./Dropdown2";
-import { Account } from "./Account";
-import { Google } from "./Google";
+import { Dropdown1 } from "../Dropdown1/Dropdown1";
+import { Dropdown2 } from "../Dropdown2/Dropdown2";
+import { Account } from "../Account/Account";
+import { Google } from "../Google/Google";
 import "./Header.css";
 
 class Header extends React.Component {

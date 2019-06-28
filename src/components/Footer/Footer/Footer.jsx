@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "reactstrap";
-import { ModalHistory } from "./ModalHistory";
-import { ModalSaved } from "./ModalSaved";
+import { ModalHistory } from "../ModalHistory/ModalHistory";
+import { ModalSaved } from "../ModalSaved/ModalSaved";
 
 const style = {
   height: "6em",

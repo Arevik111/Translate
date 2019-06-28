@@ -1,5 +1,5 @@
 import React from "react";
-import { SavedContent } from "./SavedContent";
+import { SavedContent } from "../SavedContent/SavedContent";
 import "./Modal.css";
 
 class ModalSaved extends React.Component {

@@ -1,0 +1,61 @@
+.modall {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 15%;
+  right: 0px;
+  height: 90%;
+  width: 38%;
+  border: 1px solid gray;
+  background-color: #fff;
+  border-color: #b3e5fc;
+  box-shadow: #b3e5fc;
+}
+
+.modalheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.modalbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.history {
+  font-size: 28px;
+}
+
+.btnX {
+  background-color: inherit;
+  font-size: 32px;
+  border: none;
+  color: gray;
+}
+
+.btnX:focus {
+  outline: none;
+}
+
+.styleModalImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+
+@media screen and (max-width: 640px) {
+  .modall {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+  }
+}

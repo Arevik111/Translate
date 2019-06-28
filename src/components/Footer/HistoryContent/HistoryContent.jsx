@@ -1,5 +1,6 @@
 import React from "react";
-import "./Footer.css";
+import "../Footer/Footer.css";
+
 class HistoryContent extends React.Component {
   render() {
     const { onClick } = this.props;

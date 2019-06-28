@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import { Input } from "reactstrap";
-import { Addlanguage } from "./Addlanguage";
-import { Delete } from "./Delete";
-import { InputText } from "./InputText";
+import { Addlanguage } from "../Addlanguage/Addlanguage";
+import { Delete } from "../Delete/Delete";
+import { InputText } from "../InputText/InputText";
 import "./TextArea.css";
 
 class TextArea extends React.Component {

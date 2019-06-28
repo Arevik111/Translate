@@ -1,5 +1,6 @@
 import React from "react";
 import { Input } from "reactstrap";
+
 class InputText extends React.Component {
   render() {
     const { data_name, onChange, text } = this.props;

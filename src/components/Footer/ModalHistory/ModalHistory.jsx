@@ -1,5 +1,5 @@
 import React from "react";
-import { HistoryContent } from "./HistoryContent";
+import { HistoryContent } from "../HistoryContent/HistoryContent";
 import "./Modal.css";
 
 class ModalHistory extends React.Component {

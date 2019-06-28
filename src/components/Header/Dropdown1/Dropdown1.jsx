@@ -1,5 +1,5 @@
 import React from "react";
-import { Dropdown2 } from "./Dropdown2";
+import { Dropdown2 } from "../Dropdown2/Dropdown2";
 import "./Dropdown1.css";
 
 import {

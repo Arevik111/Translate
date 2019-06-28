@@ -11,8 +11,9 @@ import {
   Col
 } from "reactstrap";
 import classnames from "classnames";
-import { Language } from "./Language";
-import { TextArea } from "./TextArea";
+import { Language } from "../Language/Language";
+import { TextArea } from "../TextArea/TextArea";
+
 class Tabs extends React.Component {
   constructor(props) {
     super(props);
