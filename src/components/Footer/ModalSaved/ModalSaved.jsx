@@ -1,6 +1,6 @@
 import React from "react";
 import { SavedContent } from "../SavedContent/SavedContent";
-import "./Modal.css";
+import "./Modal.scss";
 
 class ModalSaved extends React.Component {
   render() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "../Footer/Footer.css";
+import "../Footer/Footer.scss";
 
 class HistoryContent extends React.Component {
   render() {

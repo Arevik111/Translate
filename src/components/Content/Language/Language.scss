@@ -1,5 +1,8 @@
+$display: flex;
+$position: absolute;
+
 .panelLang {
-  display: flex;
+  display: $display;
   justify-content: space-between;
   align-items: center;
   height: 50px;
@@ -7,28 +10,28 @@
 }
 
 .lang1 {
-  position: absolute;
+  position: $position;
   left: 30%;
 }
 
 .arrow {
-  position: absolute;
+  position: $position;
   left: 48%;
 }
 
 .lang2 {
-  position: absolute;
+  position: $position;
   left: 60%;
 }
 
 @media screen and (max-width: 640px) {
   .lang1 {
-    position: absolute;
+    position: $position;
     left: 5%;
   }
 
   .lang2 {
-    position: absolute;
+    position: $position;
     left: 65%;
   }
 
@@ -37,7 +40,7 @@
   }
 
   .arrow {
-    position: absolute;
+    position: $position;
     left: 44%;
   }
 }

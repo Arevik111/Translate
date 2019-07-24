@@ -1,6 +1,8 @@
+$display: flex;
+$j-content: center;
 .styleF {
-  display: flex;
-  justify-content: center;
+  display: $display;
+  justify-content: $j-content;
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 30px;
@@ -13,8 +15,8 @@
 
 @media screen and (max-width: 640px) {
   .styleF {
-    display: flex;
-    justify-content: center;
+    display: $display;
+    justify-content: $j-content;
     align-items: center;
     padding-top: 60px;
   }

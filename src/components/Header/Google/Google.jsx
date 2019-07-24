@@ -1,5 +1,5 @@
 import React from "react";
-import "./Google.css";
+import "./Google.scss";
 
 class Google extends React.Component {
   render() {

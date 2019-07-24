@@ -1,0 +1,39 @@
+$display: flex;
+$a-items: center;
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+.header {
+  display: $display;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  align-items: $a-items;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.headerOne {
+  display: $display;
+  align-items: $a-items;
+}
+
+.headerTwo {
+  padding: 0 0;
+}
+
+.dropdown2 {
+  display: inline;
+}
+
+@media screen and (max-width: 640px) {
+  .dropdown2 {
+    display: none;
+  }
+}

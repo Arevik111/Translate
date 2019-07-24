@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Fade } from "reactstrap";
-import "./Language.css";
+import "./Language.scss";
 
 class Language extends React.Component {
   constructor(props) {

@@ -1,26 +1,30 @@
+$display: flex;
+$flex-dir-col: column;
+$pos-fix: fixed;
+$b-color: #b3e5fc;
 .modall {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
+  display: $display;
+  flex-direction: $flex-dir-col;
+  position: $pos-fix;
   top: 15%;
   right: 0px;
   height: 90%;
   width: 38%;
   border: 1px solid gray;
   background-color: #fff;
-  border-color: #b3e5fc;
-  box-shadow: #b3e5fc;
+  border-color: $b-color;
+  box-shadow: $b-color;
 }
 
 .modalheader {
-  display: flex;
+  display: $display;
   flex-direction: row;
   justify-content: space-between;
   padding: 15px;
 }
 
 .modalbody {
-  display: flex;
+  display: $display;
   justify-content: center;
   align-items: center;
   height: 400px;
@@ -42,7 +46,7 @@
 }
 
 .styleModalImg {
-  display: flex;
+  display: $display;
   justify-content: center;
   align-items: center;
   height: 180px;
@@ -51,8 +55,8 @@
 @media screen and (max-width: 640px) {
   .modall {
     display: flex;
-    flex-direction: column;
-    position: fixed;
+    flex-direction: $flex-dir-col;
+    position: $pos-fix;
     top: 0;
     height: 100%;
     width: 100%;

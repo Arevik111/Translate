@@ -3,7 +3,7 @@ import { Input } from "reactstrap";
 import { Addlanguage } from "../Addlanguage/Addlanguage";
 import { Delete } from "../Delete/Delete";
 import { InputText } from "../InputText/InputText";
-import "./TextArea.css";
+import "./TextArea.scss";
 
 class TextArea extends React.Component {
   state = {

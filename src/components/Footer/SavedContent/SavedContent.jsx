@@ -1,6 +1,6 @@
 import React from "react";
-import "../Footer/Footer.css";
-import "./Saved.css";
+import "../Footer/Footer.scss";
+import "./Saved.scss";
 
 class SavedContent extends React.Component {
   render() {
